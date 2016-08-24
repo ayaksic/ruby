@@ -1,6 +1,6 @@
 bottles_of_beer = 99
 
-while bottles_of_beer >= 2
+while bottles_of_beer > 1
 	puts bottles_of_beer.to_s + " bottles of beer on the wall, " + bottles_of_beer.to_s + " bottles of beer! You take one down, you pass it around, " + (bottles_of_beer-1).to_s + " bottles of beer on the wall!"
 	bottles_of_beer -= 1
 end
