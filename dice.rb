@@ -18,5 +18,12 @@ class Die
 end
 
 die = Die.new
-puts die.showing
-puts die.cheat(4)
+puts "How many times do you want to roll the dice?"
+roll_count = gets.chomp.to_i
+counter = 1
+while counter<=roll_count
+	puts "Your dice roll was: " + die.showing.to_s
+	die.roll
+	counter+=1
+end
+#puts die.cheat(4)
