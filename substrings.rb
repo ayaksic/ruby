@@ -3,8 +3,8 @@ def substrings word, dictionary
 	letters = word.downcase.scan(/\w/)
 	word_hash.each do |key,value|
 		letters_to_check_for = key.downcase.scan(/\w/)
-		for i in (0..letters.length-1)
-			if letters[i..i+letters_to_check_for.length-1]==letters_to_check_for
+		for i in (0...letters.length)
+			if letters[i...i+letters_to_check_for.length]==letters_to_check_for
 					value+=1
 			end
 		end
